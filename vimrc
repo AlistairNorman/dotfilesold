@@ -38,6 +38,11 @@ Bundle 'bbommarito/vim-slim'
 """ Functionality
 """""""""""""""""
 
+" Rainbow Parentheses
+Bundle 'kien/rainbow_parentheses.vim'
+let g:rbpt_max = 5
+nmap <leader>{ :RainbowParenthesesToggleAll<cr>
+
 " Unimpaired
 Bundle 'tpope/vim-unimpaired'
 
@@ -65,12 +70,15 @@ Bundle 'jarednorman/snipmate.vim'
 " L9
 Bundle 'L9'
 
-" FuzzyFinder
-Bundle 'FuzzyFinder'
-nmap <leader><leader> :FufFile<cr>
-nmap <leader>t :FufTag<cr>
-nmap <leader>b :FufBuffer<cr>
-nmap <F5> :FufRenew<cr>
+" CtrlP
+Bundle 'kien/ctrlp.vim'
+let g:ctrlp_working_path_mode = '' " Stop messing with the path
+let g:ctrlp_match_window_bottom = 0 " Show at top of window
+let g:ctrlp_mru_files = 1 " Enable Most Recently Used files feature
+let g:ctrlp_jump_to_buffer = 2 " Jump to tab AND buffer if already open
+nmap <leader><leader> :CtrlP<cr>
+nmap <leader>t :CtrlPTag<cr>
+nmap <leader>b :CtrlPBuffer<cr>
 
 " Powerline
 Bundle 'Lokaltog/vim-powerline'
@@ -109,6 +117,12 @@ set relativenumber
 
 """ Filetype Specific stuff
 """""""""""""""""""""""""""
+
+" Rainbow Parens Always
+autocmd VimEnter * RainbowParenthesesToggle
+autocmd Syntax   * RainbowParenthesesLoadRound
+autocmd Syntax   * RainbowParenthesesLoadSquare
+autocmd Syntax   * RainbowParenthesesLoadBraces
 
 " Coffee
 autocmd FileType coffee set tabstop=4
