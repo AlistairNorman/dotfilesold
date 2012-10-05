@@ -1,6 +1,6 @@
 [user]
-    name   = "Jared Norman"
-    email  = hi@jarednorman.ca
+    name = Alistair Norman
+    email = 4l15741r@gmail.com
 [alias]
     head   = !git l -1
     d      = diff --color

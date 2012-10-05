@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="txxx"
+ZSH_THEME="txxx-dark"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -46,8 +46,8 @@ SAVEHIST=1000000
 
 # aliases
 alias v=vim
-alias irc="ssh txa-ea@txa.doesntexist.com -t 'screen -dr'"
-alias irc-home="ssh txa-ea@192.168.1.100 -t 'screen -dr'"
+alias irc="ssh blacklingo@txa.doesntexist.com -t 'screen -dr'"
+alias irc-home="ssh blacklingo@192.168.1.100 -t 'screen -dr'"
 alias serve="thin -R ~/.static.ru start"
 alias hist="cat ~/.histfile | grep"
 alias zource='source ~/.zshrc'

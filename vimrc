@@ -56,7 +56,7 @@ Bundle 'tpope/vim-fugitive'
 " Solarized
 Bundle 'altercation/vim-colors-solarized'
 syntax enable
-set background=light
+set background=dark
 colo solarized
 
 " SnipMate
@@ -75,7 +75,7 @@ nmap <F5> :FufRenew<cr>
 " Powerline
 Bundle 'Lokaltog/vim-powerline'
 set laststatus=2
-let g:Powerline_colorscheme='solarizedLight'
+let g:Powerline_colorscheme="skwp"
 
 " Syntastic
 Bundle 'scrooloose/syntastic.git'
@@ -94,11 +94,8 @@ set backspace=indent,eol,start
 set nobackup
 set autoindent
 set expandtab
-set softtabstop=4
-set shiftwidth=4
 set noerrorbells visualbell t_vb=
 autocmd GUIEnter * set visualbell t_vb=
-set nohlsearch
 set incsearch
 set foldmethod=manual
 set cursorline
@@ -114,14 +111,14 @@ set relativenumber
 """""""""""""""""""""""""""
 
 " Coffee
-autocmd FileType coffee  set tabstop=4
-autocmd FileType coffee  set shiftwidth=4
-autocmd FileType coffee  set softtabstop=4
+autocmd FileType coffee set tabstop=4
+autocmd FileType coffee set shiftwidth=4
+autocmd FileType coffee set softtabstop=4
 
 " Lua
-autocmd FileType lua  set tabstop=2
-autocmd FileType lua  set shiftwidth=2
-autocmd FileType lua  set softtabstop=2
+autocmd FileType lua set tabstop=2
+autocmd FileType lua set shiftwidth=2
+autocmd FileType lua set softtabstop=2
 
 " Ruby
 autocmd FileType ruby set tabstop=2
@@ -154,8 +151,6 @@ nmap <leader>1234567890 :wq<cr>
 nmap K \<noop>
 nmap <c-j> j<c-e>
 nmap <c-k> k<c-y>
-map <c-l> <c-PageDown>
-map <c-h> <c-PageUp>
 
 """ LEADER LEADER
 """""""""""""""""
@@ -184,8 +179,6 @@ nmap <leader>qh :set hlsearch! <CR>
 """ Welcome to Hell
 """""""""""""""""""
 
-nmap h :echo "NO!"<cr>
-nmap l :echo "NO!"<cr>
 map <Up> :echo "NO!"<cr>
 map <Down> :echo "NO!"<cr>
 map <Left> :echo "NO!"<cr>
