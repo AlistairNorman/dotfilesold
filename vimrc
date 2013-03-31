@@ -114,6 +114,10 @@ set winheight=5
 set winminheight=5
 set winheight=999
 set relativenumber
+set list listchars=tab:»·,trail:·
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 
 """ Filetype Specific stuff
 """""""""""""""""""""""""""
@@ -165,6 +169,8 @@ nmap <leader>1234567890 :wq<cr>
 nmap K \<noop>
 nmap <c-j> j<c-e>
 nmap <c-k> k<c-y>
+nmap <c-h> :tabp<cr>
+nmap <c-l> :tabn<cr>
 
 """ LEADER LEADER
 """""""""""""""""

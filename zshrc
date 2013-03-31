@@ -45,7 +45,6 @@ HISTSIZE=1000000
 SAVEHIST=1000000
 
 # aliases
-alias vim=nano
 alias v=vim
 alias irc="ssh blacklingo@txa.doesntexist.com -t 'screen -dr'"
 alias irc-home="ssh blacklingo@192.168.1.100 -t 'screen -dr'"
